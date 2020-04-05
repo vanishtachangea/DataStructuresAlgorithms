@@ -1,0 +1,7 @@
+C:\10_Development\2_Algorithms_Interview\DataStructures\DepthBreadthSearch\bin\Debug\DepthBreadthSearch.exe.config
+C:\10_Development\2_Algorithms_Interview\DataStructures\DepthBreadthSearch\bin\Debug\DepthBreadthSearch.exe
+C:\10_Development\2_Algorithms_Interview\DataStructures\DepthBreadthSearch\bin\Debug\DepthBreadthSearch.pdb
+C:\10_Development\2_Algorithms_Interview\DataStructures\DepthBreadthSearch\obj\Debug\DepthBreadthSearch.csprojAssemblyReference.cache
+C:\10_Development\2_Algorithms_Interview\DataStructures\DepthBreadthSearch\obj\Debug\DepthBreadthSearch.csproj.CoreCompileInputs.cache
+C:\10_Development\2_Algorithms_Interview\DataStructures\DepthBreadthSearch\obj\Debug\DepthBreadthSearch.exe
+C:\10_Development\2_Algorithms_Interview\DataStructures\DepthBreadthSearch\obj\Debug\DepthBreadthSearch.pdb
