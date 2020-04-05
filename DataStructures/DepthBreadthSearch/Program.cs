@@ -82,7 +82,24 @@ namespace DepthBreadthSearch
                 return true;
             return false;
         }
-
+        //https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/
+        public static int MaxProfit(int[] prices)
+        {
+            int maxProfit = 0;
+            int minPrice;
+            if (prices.Length > 0)
+                minPrice = prices[0];
+            else
+                minPrice = Int32.MaxValue;
+            for (int i = 0; i < prices.Length; i++)
+            {
+                if (prices[i] < minPrice)
+                    minPrice = prices[i];
+                if (prices[i] - minPrice > maxProfit)
+                    maxProfit = prices[i] - minPrice;
+            }
+            return maxProfit;
+        }
     }
     public class Graph
     {
