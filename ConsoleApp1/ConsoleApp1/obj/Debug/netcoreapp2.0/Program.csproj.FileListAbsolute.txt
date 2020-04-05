@@ -1,0 +1,11 @@
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\Program.deps.json
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\Program.runtimeconfig.json
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\Program.runtimeconfig.dev.json
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\Program.dll
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.0\Program.pdb
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\Program.csproj.CoreCompileInputs.cache
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\Program.AssemblyInfoInputs.cache
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\Program.AssemblyInfo.cs
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\Program.dll
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\Program.pdb
+C:\10_Development\2_Algorithms_Interview\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.0\Program.csprojAssemblyReference.cache
