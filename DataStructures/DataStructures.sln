@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthBreadthSearch", "DepthBreadthSearch\DepthBreadthSearch.csproj", "{55704B37-A64B-4A7B-9C78-187E1D18CE32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{B19605B7-0D97-4224-8398-1C7F3A062DEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{55704B37-A64B-4A7B-9C78-187E1D18CE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55704B37-A64B-4A7B-9C78-187E1D18CE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55704B37-A64B-4A7B-9C78-187E1D18CE32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19605B7-0D97-4224-8398-1C7F3A062DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19605B7-0D97-4224-8398-1C7F3A062DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19605B7-0D97-4224-8398-1C7F3A062DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19605B7-0D97-4224-8398-1C7F3A062DEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

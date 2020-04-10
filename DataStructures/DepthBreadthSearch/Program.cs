@@ -25,6 +25,10 @@ namespace DepthBreadthSearch
             Console.WriteLine(DynamicProgramming.MemoisedAddTo80(5, memoization2));
             Console.WriteLine(DynamicProgramming.MemoisedAddTo80(53, memoization2));
 
+            Console.WriteLine("Search Algorithm");
+            string[] list1 ={"apple","banana", "carrot", "orange"};
+            getArrayInfo(list1);
+
             Console.ReadKey();
         }
         public static bool IsHappy(int n)
@@ -99,6 +103,11 @@ namespace DepthBreadthSearch
                     maxProfit = prices[i] - minPrice;
             }
             return maxProfit;
+        }
+
+        public static void getArrayInfo(string[] array1)
+        {
+            Console.WriteLine(Array.IndexOf(array1,"carrot"));
         }
     }
     public class Graph
