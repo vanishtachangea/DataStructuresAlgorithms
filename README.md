@@ -1,2 +1,2 @@
 # DataStructuresAlgorithms
-Practice of Datastructures, Algorithms, Coding Problems, in C# and Javascript
+Implementation of Data Structures, Algorithms and Solutions to various Coding Problems, in C# and Javascript
