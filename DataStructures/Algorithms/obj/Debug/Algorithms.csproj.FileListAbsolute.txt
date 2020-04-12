@@ -1,0 +1,7 @@
+C:\10_Development\2_Algorithms_Interview\DataStructures\Algorithms\obj\Debug\Algorithms.csprojAssemblyReference.cache
+C:\10_Development\2_Algorithms_Interview\DataStructures\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+C:\10_Development\2_Algorithms_Interview\DataStructures\Algorithms\bin\Debug\Algorithms.exe.config
+C:\10_Development\2_Algorithms_Interview\DataStructures\Algorithms\bin\Debug\Algorithms.exe
+C:\10_Development\2_Algorithms_Interview\DataStructures\Algorithms\bin\Debug\Algorithms.pdb
+C:\10_Development\2_Algorithms_Interview\DataStructures\Algorithms\obj\Debug\Algorithms.exe
+C:\10_Development\2_Algorithms_Interview\DataStructures\Algorithms\obj\Debug\Algorithms.pdb
