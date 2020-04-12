@@ -53,8 +53,8 @@ namespace Algorithms
             //int numCourses = 3;
             //int[][] prerequisites = { new int[] { 1, 0 }, new int[] { 0,2 } };
 
-            int numCourses = 4;
-            int[][] prerequisites = { new int[] { 2, 0 }, new int[] { 1, 0 }, new int[] { 3, 1 }, new int[] { 3, 2 }, new int[] { 1, 3 } };
+            //int numCourses = 4;
+            //int[][] prerequisites = { new int[] { 2, 0 }, new int[] { 1, 0 }, new int[] { 3, 1 }, new int[] { 3, 2 }, new int[] { 1, 3 } };
 
 
             // Console.WriteLine(GraphQuestions.CanFinish(numCourses, prerequisites));
@@ -67,7 +67,7 @@ namespace Algorithms
             //int N = 4;
             // { 2, 100, 50, 120, 1000]
 
-            GraphQuestions.DisplayCells(GraphQuestions.PrisonAfterNDays(cells, N));
+            //GraphQuestions.DisplayCells(GraphQuestions.PrisonAfterNDays(cells, N));
             //string b = "()()))";
             //Console.WriteLine(GraphQuestions.bracketMatch(b));
 
@@ -78,6 +78,9 @@ namespace Algorithms
             //double[] grants ={10, 5, 20, 30 };
 
             //Console.WriteLine(GraphQuestions.FindGrantsCap(grants,bud));
+            //int[] array1 = { 99,44,6,2,1,5,63,87,283,4,0 };
+            int[] array1 = { 99, 44, 6, 2, 1};
+            GraphQuestions.DisplayCells(SortingAlgorithms.MergeSort(array1));
             Console.ReadKey();
         }
     }
