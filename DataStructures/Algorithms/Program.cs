@@ -79,13 +79,30 @@ namespace Algorithms
 
             //Console.WriteLine(GraphQuestions.FindGrantsCap(grants,bud));
             //int[] array1 = { 99,44,6,2,1,5,63,87,283,4,0 };
-            int[] array1 = { 99, 44, 6, 2, 1};
-            GraphQuestions.DisplayCells(SortingAlgorithms.MergeSort(array1));
+            //int[] array1 = { 99, 44, 6, 2, 1};
+            //GraphQuestions.DisplayCells(SortingAlgorithms.MergeSort(array1));
+
+            string[] logs= { "a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo","a2 act car"};
+            //["let1 art can test", "let1 art can"]
+            //GraphQuestions.DisplayCells(GraphQuestions.ReorderLogFiles(logs));
+            //string[][] head ={ { 7, null },{ 13, 0 },{ 11, 4 },[10, 2],[1, 0]]
+
+            Console.WriteLine(LeetCodeLockDownChallenge.IsHappy(2));
+            Console.WriteLine(StringArray.LengthOfLongestSubstring("pwwkew"));
+
             Console.ReadKey();
         }
     }
     public class GraphQuestions
-    {
+     {
+        //https://leetcode.com/explore/interview/card/amazon/79/sorting-and-searching/482/
+        public int FindKthLargestNaiveSolution(int[] nums, int k)
+        {
+            Array.Sort(nums);
+            Array.Reverse(nums);
+            return nums[k - 1];
+        }
+
         public static int bracketMatch(string text)
         {
             char[] textChar = text.ToCharArray();
@@ -225,6 +242,14 @@ namespace Algorithms
             return Int32.Parse(s);
         }
         public static void DisplayCells(int[] cells)
+        {
+            for (int i = 0; i < cells.Length; i++)
+            {
+                Console.Write(cells[i] + " , ");
+            }
+            Console.WriteLine("");
+        }
+        public static void DisplayCells(string[] cells)
         {
             for (int i = 0; i < cells.Length; i++)
             {
@@ -598,5 +623,120 @@ namespace Algorithms
             return trustKey == 0 ? -1 : trustKey;
         }
 
+        //https://leetcode.com/problems/number-of-islands/solution/
+        //DFS
+        //Time complexity : O(M×N)
+        //Space complexity :O(M×N)
+        public int NumIslands(char[][] grid)
+        {
+            int cntClusters = 0;
+            for (int row = 0; row < grid.Length; row++)
+            {
+                for (int col = 0; col < grid[row].Length; col++)
+                {
+
+                    if (!IsVisited(grid[row][col]) && grid[row][col] == '1')
+                    {
+                        DFS(grid, row, col);
+                        cntClusters += 1;
+                    }
+                }
+            }
+            return cntClusters;
+        }
+        public void DFS(char[][] grid, int row, int col)
+        {
+            grid[row][col] = SetVisited(grid[row][col]);
+            if ((col - 1) >= 0 && grid[row][col - 1] == '1')
+            {
+                DFS(grid, row, col - 1);
+            }
+            if ((row - 1) >= 0 && grid[row - 1][col] == '1')
+            {
+                DFS(grid, row - 1, col);
+            }
+            if ((col + 1) < grid[0].Length && grid[row][col + 1] == '1')
+            {
+                DFS(grid, row, col + 1);
+            }
+            if ((row + 1) < grid.Length && grid[row + 1][col] == '1')
+            {
+                DFS(grid, row + 1, col);
+            }
+
+            grid[row][col] = SetVisited(grid[row][col]);
+        }
+        public bool IsVisited(char value)
+        {
+            if (value == '2' || value == '3')
+                return true;
+            else
+                return false;
+        }
+        public char SetVisited(char value)
+        {
+            if (value == '1')
+                return '2';
+            else if (value == '0')
+                return '3';
+            else
+                return value;
+        }
+
+        //End of DFS
+        //https://leetcode.com/problems/reorder-data-in-log-files/submissions/
+        public static string[] ReorderLogFiles(string[] logs)
+        {
+            SortedDictionary<String, String> sortedAlpha = new SortedDictionary<String, String>();
+            LinkedList<String> numbers = new LinkedList<String>();
+            string[] sorted = new string[logs.Length];
+            int k = 0;
+            foreach (string log in logs)
+            {
+                string[] words = log.Split(' ');
+                if (Char.IsDigit(words[1].ToCharArray()[0]))
+                {
+                    if (numbers.Count == 0)
+                        numbers.AddFirst(log);
+                    else
+                        numbers.AddLast(log);
+                }
+                else
+                {
+                    int index = log.IndexOf(" ");
+                    if (index + 1 < log.Length)
+                    {
+                        string id = log.Substring(0, index);
+                        Console.WriteLine("index: " + index);
+                        Console.WriteLine("id: " + id);
+                        if (index + 1 < log.Length)
+                        {
+                            string remaining = log.Substring(index + 1, (log.Length - (index + 1)));
+                            Console.WriteLine("remain: " + remaining);
+                            if (sortedAlpha.ContainsKey(remaining))
+                                sortedAlpha.Add(id + remaining, log);
+                            else
+                                sortedAlpha.Add(remaining, log);
+                        }
+                        //
+                        // sortedAlpha.Add(remaining, id);                  
+                    }
+
+                }
+            }
+            foreach (KeyValuePair<String, String> kpv in sortedAlpha)
+            {
+                // if(kpv.Value.Contains("0000"))
+                //    sorted[k++]=kpv.Value;
+                //    else
+                //sorted[k++]=kpv.Value+" "+kpv.Key; 
+                sorted[k++] = kpv.Value;
+            }
+            foreach (string x in numbers)
+            {
+                sorted[k++] = x;
+            }
+            return sorted;
+        }
     }
 }
